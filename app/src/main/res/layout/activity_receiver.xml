@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/receiver"
+    android:orientation="vertical"
+    android:background="@color/custom_background"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_red"
+        android:text="@string/receiver_heading"
+        android:padding="12sp"
+        android:textAllCaps="true"
+        android:textColor="@color/custom_background"
+        android:textSize="53sp"
+        />
+
+    <!-- Increase the top margin to move the fields and button down -->
+    <EditText
+        android:id="@+id/rEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded"
+        android:hint="@string/sender_email"
+        android:padding="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <EditText
+        android:id="@+id/rName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sender_name"
+        android:background="@drawable/rounded"
+        android:padding="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:id="@+id/rContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sender_contact"
+        android:background="@drawable/rounded"
+        android:padding="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/rCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sender_country"
+        android:padding="20dp"
+        android:background="@drawable/rounded"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/rAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded"
+        android:hint="@string/sender_address"
+        android:padding="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"/>
+
+    <Button
+        android:id="@+id/receiverbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/sender_button"
+        android:backgroundTint="@color/custom_red"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>

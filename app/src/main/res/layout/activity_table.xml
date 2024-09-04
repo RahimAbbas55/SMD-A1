@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/table"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:paddingBottom="80dp"
+        android:id="@+id/myTable">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/custom_red"
+            android:padding="12dp"
+            android:text="@string/review_heading"
+            android:textAllCaps="true"
+            android:textColor="@color/custom_background"
+            android:textSize="28sp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/name"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:text="@string/country"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:text="@string/address"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:text="@string/contact_info"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+        </TableRow>
+    </TableLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabAdd"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="40dp"
+        android:backgroundTint="@color/custom_red"
+        android:src="@drawable/baseline_add_24"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
